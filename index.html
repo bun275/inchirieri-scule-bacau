@@ -231,12 +231,12 @@
   /* Imagini de pe Unsplash: lipește mai jos linkul direct (clic dreapta pe poză > "Copiază adresa imaginii").
      Dacă un link lipsește sau nu se încarcă, cardul afișează automat pictograma. */
   var IMAGINI = {
-    "mai-compactor": "https://images.unsplash.com/photo-1581092335397-9583fe92d232",
-    "picamere": "https://images.unsplash.com/photo-1504307651254-35680f356dfd",
-    "drujbe": "https://images.unsplash.com/photo-1617104678873-19597793540c",
-    "generator-curent": "https://images.unsplash.com/photo-1581092160607-ee22621dd758",
-    "scule-gaurit": "https://images.unsplash.com/photo-1504148455328-c376907d081c",
-    "scule-demolat": "https://images.unsplash.com/photo-1541888946425-d0fbb18f86f6"
+    "mai-compactor": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcVAGQZtzTmWWbzz3juH3BCxe6XRdb7yRBT3NSnysK8fPqvKhdEOCEcHBf&s=10",
+    "picamere": "https://www.artool.ro/userfiles/65a81db3-195c-4db7-b495-805aeefd4dc1/products/5313959_big.jpg",
+    "drujbe": "https://s13emagst.akamaized.net/products/80958/80957525/images/res_390866ab03dbd924f73c2eef79902d68.jpg?width=720&height=720&hash=951BEF9D1820525856B4D847AED65C3A",
+    "generator-curent": "https://s13emagst.akamaized.net/products/19297/19296936/images/res_40e5ccfa375f92c17c3f3ab3799acfc1.jpg?width=720&height=720&hash=56E97678380ECA95DEC9EB753AB65C55",
+    "scule-gaurit": "https://www.energo.com.ro/media/catalog/category/4010101._Rotopercutoare_sds_ENERGO.jpg",
+    "scule-demolat": "https://www.scule.ro/images/com_eoshop3/product_thumb/3788/debitator-cu-motor-pe-benzina-6-8-cp-disc-350-mm-ts700.jpg"
   };
 
   document.querySelectorAll(".thumb[data-img]").forEach(function (box) {
@@ -248,6 +248,7 @@
     var img = new Image();
     img.alt = box.dataset.alt;
     img.loading = "lazy";
+    img.referrerPolicy = "no-referrer";
     img.onload = function () { box.appendChild(img); };
     img.src = url;
   });
