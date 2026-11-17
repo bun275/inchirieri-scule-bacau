@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Închirieri Scule și Utilaje Bacău | Echipamente profesionale</title>
+<meta name="description" content="Închirieri scule și echipamente profesionale în Bacău: mai compactor, picamere, drujbe, generatoare și multe altele. Sună la 0752 134 848.">
+<style>
+  :root {
+    --bg: #ffffff;
+    --surface: #f3f4f6;
+    --ink: #1f2328;
+    --muted: #5b626b;
+    --line: #dfe2e6;
+    --accent: #f59e0b;
+    --accent-dark: #d97706;
+    --dark: #23272d;
+    --radius: 6px;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+    color: var(--ink);
+    background: var(--bg);
+    line-height: 1.6;
+  }
+  a { color: inherit; text-decoration: none; }
+  :focus-visible { outline: 3px solid var(--ink); outline-offset: 3px; }
+  .wrap { width: min(1120px, 92%); margin-inline: auto; }
+
+  /* Header */
+  header {
+    position: sticky; top: 0; z-index: 10;
+    background: var(--dark);
+    border-bottom: 4px solid var(--accent);
+  }
+  .nav { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 14px 0; }
+  .brand { color: #fff; font-weight: 800; font-size: 1.05rem; line-height: 1.2; letter-spacing: .2px; }
+  .brand span { color: var(--accent); }
+  .btn {
+    display: inline-block; background: var(--accent); color: #1a1a1a;
+    font-weight: 800; padding: 12px 22px; border-radius: var(--radius);
+    transition: background .2s, transform .2s; white-space: nowrap;
+  }
+  .btn:hover { background: var(--accent-dark); transform: translateY(-2px); }
+  .btn-lg { padding: 18px 36px; font-size: 1.15rem; }
+
+  /* Hero */
+  .hero {
+    background:
+      repeating-linear-gradient(-45deg, rgba(245,158,11,.07) 0 14px, transparent 14px 28px),
+      var(--surface);
+    padding: 88px 0 96px;
+    border-bottom: 1px solid var(--line);
+  }
+  .hero h1 { font-size: clamp(2rem, 5.5vw, 3.6rem); line-height: 1.1; max-width: 17ch; font-weight: 900; letter-spacing: -.5px; }
+  .hero p { margin: 22px 0 34px; max-width: 56ch; font-size: 1.15rem; color: var(--muted); }
+  .hero small { display: block; margin-top: 16px; color: var(--muted); }
+
+  /* Sections */
+  section { padding: 80px 0; }
+  .alt { background: var(--surface); }
+  h2 { font-size: clamp(1.6rem, 3.5vw, 2.2rem); line-height: 1.2; margin-bottom: 12px; font-weight: 800; }
+  .lead { color: var(--muted); max-width: 60ch; margin-bottom: 40px; }
+
+  /* Cards */
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px; }
+  .card {
+    background: #fff; border: 1px solid var(--line); border-top: 5px solid var(--accent);
+    border-radius: var(--radius); padding: 28px;
+    transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease;
+  }
+  .card:hover { transform: translateY(-6px); box-shadow: 0 14px 28px rgba(31,35,40,.14); border-top-color: var(--dark); }
+  .card svg { width: 44px; height: 44px; stroke: var(--dark); fill: none; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; margin-bottom: 16px; }
+  .card h3 { font-size: 1.2rem; margin-bottom: 8px; }
+  .card p { color: var(--muted); font-size: .98rem; }
+
+  /* Why us */
+  .why { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 32px; }
+  .why div { border-left: 5px solid var(--accent); padding-left: 20px; }
+  .why h3 { margin-bottom: 6px; font-size: 1.2rem; }
+  .why p { color: var(--muted); }
+
+  /* Contact */
+  .contact { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 32px; align-items: start; }
+  .box { background: #fff; border: 1px solid var(--line); border-radius: var(--radius); padding: 28px; }
+  .box h3 { margin-bottom: 14px; font-size: 1.2rem; }
+  .hours { list-style: none; }
+  .hours li { display: flex; justify-content: space-between; gap: 16px; padding: 10px 0; border-bottom: 1px dashed var(--line); }
+  .hours li:last-child { border-bottom: 0; }
+  .hours strong { white-space: nowrap; }
+  .info p { margin-bottom: 14px; }
+  .phone { font-size: 1.8rem; font-weight: 900; display: inline-block; margin: 4px 0 18px; }
+  .phone:hover { color: var(--accent-dark); }
+
+  footer { background: var(--dark); color: #c9ced4; text-align: center; padding: 26px 0; font-size: .92rem; }
+
+  @media (max-width: 560px) {
+    .brand { font-size: .92rem; }
+    .btn { padding: 11px 14px; }
+    .hero { padding: 56px 0 64px; }
+    section { padding: 56px 0; }
+    .btn-lg { width: 100%; text-align: center; padding: 18px 16px; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    * { transition: none !important; scroll-behavior: auto !important; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#top">Închirieri <span>Scule și Utilaje</span> Bacău</a>
+    <a class="btn" href="tel:+40752134848" aria-label="Sună la 0752 134 848">Sună: 0752 134 848</a>
+  </div>
+</header>
+
+<main id="top">
+  <div class="hero">
+    <div class="wrap">
+      <h1>Închirieri Scule și Echipamente Profesionale în Bacău</h1>
+      <p>Soluții rapide și sigure pentru construcții, renovări și grădinărit. Fără bătăi de cap, echipamente verificate gata de treabă.</p>
+      <a class="btn btn-lg" href="tel:+40752134848">Sună Acum pentru Rezervare</a>
+      <small>Strada Brândușei 35, Bacău</small>
+    </div>
+  </div>
+
+  <section id="utilaje">
+    <div class="wrap">
+      <h2>Utilaje și scule disponibile</h2>
+      <p class="lead">Alege echipamentul potrivit pentru lucrarea ta. Dacă nu ești sigur ce ți se potrivește, te sfătuim la telefon.</p>
+      <div class="grid">
+        <article class="card">
+          <svg viewBox="0 0 48 48" aria-hidden="true"><rect x="10" y="8" width="28" height="12" rx="2"/><path d="M24 20v10M14 30h20l4 10H10z"/></svg>
+          <h3>Mai compactor</h3>
+          <p>Pentru tasarea pământului, nisipului și balastului la fundații, alei și pavaje.</p>
+        </article>
+        <article class="card">
+          <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M8 12h32M24 12v22M18 34h12l-6 8z"/></svg>
+          <h3>Picamere</h3>
+          <p>Demolări de beton, zidărie și sparge de pardoseli, de la modele ușoare la cele grele.</p>
+        </article>
+        <article class="card">
+          <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M6 30h22l8-8h6v8H28v6H6z"/><path d="M12 30v-8h10"/></svg>
+          <h3>Drujbe</h3>
+          <p>Tăiat lemne, curățat arbori și pregătit materialul lemnos pentru iarnă.</p>
+        </article>
+        <article class="card">
+          <svg viewBox="0 0 48 48" aria-hidden="true"><rect x="6" y="14" width="36" height="22" rx="3"/><path d="M26 18l-6 8h6l-4 8"/></svg>
+          <h3>Generatoare de curent</h3>
+          <p>Alimentare electrică sigură pe șantier, la evenimente sau în caz de pene de curent.</p>
+        </article>
+        <article class="card">
+          <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M8 20h24v10H8zM32 22h8v6h-8zM14 30v8h8v-8"/><path d="M8 24h-4"/></svg>
+          <h3>Scule pentru găurit</h3>
+          <p>Rotopercutoare, mașini de carotat și burghie pentru beton, cărămidă și piatră.</p>
+        </article>
+        <article class="card">
+          <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M10 38L30 18M26 14l8 8M30 10l8 8M34 6l8 8"/><path d="M8 40l4-4"/></svg>
+          <h3>Scule pentru demolat</h3>
+          <p>Ciocane de demolare, dălți și accesorii pentru lucrări de dezafectare rapide.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="avantaje" class="alt">
+    <div class="wrap">
+      <h2>De ce să ne alegi?</h2>
+      <p class="lead">Ne dorim ca lucrarea ta să meargă fără opriri, de la ridicarea echipamentului până la returnare.</p>
+      <div class="why">
+        <div>
+          <h3>Echipamente de calitate profesională</h3>
+          <p>Unelte robuste, verificate și întreținute, pregătite să lucreze din prima zi.</p>
+        </div>
+        <div>
+          <h3>Prețuri accesibile și flexibilitate</h3>
+          <p>Închiriezi pe oră, zi sau perioadă mai lungă, la tarife corecte, fără costuri ascunse.</p>
+        </div>
+        <div>
+          <h3>Disponibilitate și consultanță locală</h3>
+          <p>Suntem în Bacău și te ajutăm să alegi echipamentul potrivit pentru lucrarea ta.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="wrap">
+      <h2>Program și contact</h2>
+      <p class="lead">Vino direct la sediu sau sună-ne pentru a rezerva echipamentul dorit.</p>
+      <div class="contact">
+        <div class="box">
+          <h3>Program de lucru</h3>
+          <ul class="hours">
+            <li><span>Luni</span><strong>00:00 – 19:00</strong></li>
+            <li><span>Marți – Vineri</span><strong>08:00 – 19:00</strong></li>
+            <li><span>Sâmbătă</span><strong>08:30 – 15:00</strong></li>
+            <li><span>Duminică</span><strong>09:00 – 14:00</strong></li>
+          </ul>
+        </div>
+        <div class="box info">
+          <h3>Date de contact</h3>
+          <p><strong>Adresă:</strong><br>Strada Brândușei 35, Bacău</p>
+          <p><strong>Telefon:</strong><br>
+            <a class="phone" href="tel:+40752134848">0752 134 848</a></p>
+          <a class="btn" href="tel:+40752134848">Sună Acum pentru Rezervare</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">© <span id="year">2026</span> Închirieri Scule și Utilaje Bacău · Strada Brândușei 35, Bacău · 0752 134 848</div>
+</footer>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
